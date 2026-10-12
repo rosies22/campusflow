@@ -1,0 +1,13 @@
+# Final Demo Checklist
+- [ ] Create low, medium, high, and critical tickets.
+- [ ] Reject blank title or zero affected users.
+- [ ] List tickets and view one ticket.
+- [ ] Reject unassigned transition to `in_progress`.
+- [ ] Assign a ticket and progress `open` -> `in_progress` -> `resolved`.
+- [ ] Reopen a resolved ticket.
+- [ ] Show queue priority and numeric-ID ordering.
+- [ ] Show reports, including zero-ticket report behaviour.
+- [ ] Restart and prove JSON persistence.
+- [ ] Run full automated test suite and show output.
+- [ ] Show both reviewed PRs, substantive review comments, approvals, and merges.
+- [ ] Each fellow explains their code, a test, and one verified/changed/rejected AI suggestion.

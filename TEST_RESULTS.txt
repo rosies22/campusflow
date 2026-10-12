@@ -1,0 +1,47 @@
+Command: python -m unittest discover -s tests -v
+Exit code: 0
+
+STDOUT:
+
+STDERR:
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.
+test_duplicate_ids_rejected (test_storage.StorageTests.test_duplicate_ids_rejected) ... ok
+test_malformed_json_is_not_erased (test_storage.StorageTests.test_malformed_json_is_not_erased) ... ok
+test_missing_file_starts_empty (test_storage.StorageTests.test_missing_file_starts_empty) ... ok
+test_save_reload_and_next_id (test_storage.StorageTests.test_save_reload_and_next_id) ... ok
+test_high_12_is_critical (test_tickets.PriorityTests.test_high_12_is_critical) ... ok
+test_high_2_is_high (test_tickets.PriorityTests.test_high_2_is_high) ... ok
+test_low_1_is_low (test_tickets.PriorityTests.test_low_1_is_low) ... ok
+test_low_4_is_medium (test_tickets.PriorityTests.test_low_4_is_medium) ... ok
+test_medium_urgency_is_medium (test_tickets.PriorityTests.test_medium_urgency_is_medium) ... ok
+test_ten_users_is_high_even_if_low_urgency (test_tickets.PriorityTests.test_ten_users_is_high_even_if_low_urgency) ... ok
+test_blank_title_rejected_without_mutation (test_tickets.TicketCreationTests.test_blank_title_rejected_without_mutation) ... ok
+test_creation_normalizes_values_and_generates_id (test_tickets.TicketCreationTests.test_creation_normalizes_values_and_generates_id) ... ok
+test_decimal_users_rejected (test_tickets.TicketCreationTests.test_decimal_users_rejected) ... ok
+test_find_ticket_ignores_id_case (test_tickets.TicketCreationTests.test_find_ticket_ignores_id_case) ... ok
+test_id_uses_highest_existing_number (test_tickets.TicketCreationTests.test_id_uses_highest_existing_number) ... ok
+test_invalid_category_and_urgency_rejected (test_tickets.TicketCreationTests.test_invalid_category_and_urgency_rejected) ... ok
+test_zero_users_rejected (test_tickets.TicketCreationTests.test_zero_users_rejected) ... ok
+test_assigned_ticket_progresses_to_resolved (test_workflow.WorkflowTests.test_assigned_ticket_progresses_to_resolved) ... ok
+test_blank_staff_rejected (test_workflow.WorkflowTests.test_blank_staff_rejected) ... ok
+test_invalid_transition_rejected (test_workflow.WorkflowTests.test_invalid_transition_rejected) ... ok
+test_queue_excludes_non_open (test_workflow.WorkflowTests.test_queue_excludes_non_open) ... ok
+test_queue_priority_then_numeric_id (test_workflow.WorkflowTests.test_queue_priority_then_numeric_id) ... ok
+test_reports_and_empty_report (test_workflow.WorkflowTests.test_reports_and_empty_report) ... ok
+test_resolved_ticket_requires_reopen_before_modification (test_workflow.WorkflowTests.test_resolved_ticket_requires_reopen_before_modification) ... ok
+test_unassigned_ticket_cannot_start (test_workflow.WorkflowTests.test_unassigned_ticket_cannot_start) ... ok
+test_unknown_ticket_rejected (test_workflow.WorkflowTests.test_unknown_ticket_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 0.002s
+
+OK
